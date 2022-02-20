@@ -1,2 +1,5 @@
 # Speedtest-to-TwitterBot
-Twitter API 2.0に準拠
+Twitter v2 準拠
+
+サービス；https://www.skri.gr.jp/network/speedtest/
+Twitter：https://twitter.com/ooklaspd_result
