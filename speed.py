@@ -15,7 +15,7 @@ def test():
 
         #run speedtest-cli
         print 'Server Selected'
-        srvNum = random.randrange(2,5)
+        srvNum = random.randint(2,11)
         a = os.popen("python /root/speedtest/speedtest-cli --list").read()
         line = a.split('\n')
         print a
