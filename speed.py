@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #coding: utf-8
 import os
+import subprocess
 import sys
 import csv
 import datetime
@@ -15,8 +16,10 @@ def test():
 
         #run speedtest-cli
         print 'Server Selected'
-        srvNum = random.randint(2,11)
-        a = os.popen("python /root/speedtest/speedtest-cli --list").read()
+        srvNum = random.randint(2,10)
+        print srvNum
+        a = subprocess.check_output("python /root/speedtest/speedtest-cli --list",shell=True)
+        time.sleep(3)
         line = a.split('\n')
         print a
         tarSrv = line[srvNum]
